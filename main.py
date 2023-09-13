@@ -1,14 +1,19 @@
- 
-def CheckLeap(Year):  
-   
-  if((Year % 400 == 0) or  
-     (Year % 100 != 0) and  
-     (Year % 4 == 0)):   
-    print("Given Year is a leap Year");  
-    
-  else:  
-    print ("Given Year is not a leap Year")  
- 
-Year = int(input("Enter the number: "))  
 
-CheckLeap(Year)  
+
+def factorial(x):
+    """This is a recursive function
+    to find the factorial of an integer"""
+
+    if x == 1:
+        return 1
+    else:
+        
+        return (x * factorial(x-1))
+
+
+
+num = 7
+
+
+result = factorial(num)
+print("The factorial of", num, "is", result)
